@@ -3,6 +3,17 @@
  */
 package de.buw.se;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.nio.file.Files;
+
+import javax.swing.JOptionPane;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -15,16 +26,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.nio.file.Files;
-import javax.swing.JOptionPane;
 
 public class AppGUI extends Application {
 	
@@ -148,7 +149,7 @@ public class AppGUI extends Application {
         // Adding texts before the text fields for Sign In Page
         Text text1 = new Text("Choose your ID:");
         Text text2 = new Text("Choose your Password");
-        Text text3 = new Text("Teachers email at muhammad.qasim.hussain@uni-weimar.de to get the login details.");
+        Text text3 = new Text("Teachers email at ankit.anand@uni-weimar.de to get the login details.");
         Text text4 = new Text("Click the LogIn Page button if you are already registered.");
         Text text5 = new Text("Students register using the Sign Up button below. "
         		+ "After registration, go to the login page.");
